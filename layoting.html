@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-slate-100 text-slate-800 p-8">
+    <div class="ma-w-4xl mx-auto space-y-10">
+        <!-- header -->
+         <div class="text-center">
+            <h1 class="text-3xl font-extrabold text-blue-600 mb-2">belajar layouting</h1>
+            <p class="text-slate-600">layout, flexbox, spacing</p>
+         </div>
+
+         <!-- layout utilities -->
+          <section class="bg-white p-6 rounded-xl shadow-md border border-slate-300">
+            <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-4">1. layout utilities</h2>
+            <p class="text-sm text-slate-500 mb-3">pembungkus(container), display</p>
+            
+            <div class="container mx-auto bg-slate-50 p-4 rounded border mb-4 space-y-2">
+                <div class="block bg-blue-100 text-blue-800 p-2 rounded">display blok</div>
+                <div class="inline-block bg-emerald-100 text-emerald-800 p-2 rounded">display inline blok</div>
+
+            </div>
+
+          </section>
+
+
+          <!-- flexbox utilities -->
+            <section class="bg-white p-6 rounded-xl shadow-md border border-slate-300">
+                <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-4">2. flexbox utilities</h2>
+                <p class="text-sm text-slate-500 mb-3">belajar display flex</p>
+
+                <div class="flex flex-row justify-center gap-2 ">
+                    <div class="bg-emerald-200 p-2 rounded">item 1</div>
+                    <div class="bg-emerald-400 p-2 rounded">item 2</div>
+                    <div class="bg-emerald-800 p-2 rounded">item 3</div>
+                </div>
+
+            </section>
+
+                <!-- animation -->
+             <section class="bg-white p-6 rounded-xl shadow-md border border-slate-300" >
+                <h2 class="text-xl font-bold text-slate-900 border-b-2 border-blue-500 pb-2 mb-4">3. animation</h2>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 text-white gap-4">
+
+                    <!-- div animate spin -->
+                    <div class="bg-indigo-600 p-4 rounded-lg flex gap-2 items-center">
+                        <!-- div buat si loadingnya -->
+                        <div class="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                        animate spin
+                    </div>
+
+                    <!-- div animate pulse -->
+                    <div class="bg-indigo-600 p-4 rounded-lg animate-pulse">animate pulse</div>
+                </div>
+
+             </section>
+   
+                
+              
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-white text-black dark:bg-slate-900 dark:text-white p-10 ">
+
+    <!-- tombol pindah tema -->
+     <button id="toggle-btn" class="w-16 h-8 bg-slate-300 dark:bg-slate-700 rounded-full p-1 duration-300 flex items-center cursor-pointer mb-6">
+         <!-- buletan yg geser kanan kiri -->
+          <div id="switch-circle" class="w-6 h-6 bg-white dark:bg-slate-900 rounded-full shadow-md flex items-center justify-center text-xs transition-transform duration-300">
+
+          </div>
+     </button>
+    
+    <!-- konten -->
+     <div class="p-6 border border-slate-700 dark:border-slate-200 rounded-lg">
+        <h1>nama saya umamah</h1>
+     </div>
+
+     <script>
+        const btn = document.getElementById('toggle-btn');
+        const circle = document.getElementById('switch-circle');
+
+        // kode yg akan dijalankan kalau misalnya tombol nya di klik
+        btn.addEventListener('click', () => {
+            // ngaktifin / matiin class dark 
+            document.documentElement.classList.toggle('dark');
+            // ngecek status, kalau dark nya true berati mode gelap aktif
+            const isDark = document.documentElement.classList.contains('dark');
+
+            // Ubah posisi bulatan & ikonnya, kalau misal dark, tombol nyadi geser ke kanan dan diubah jd bulan
+            if (isDark) {
+                circle.classList.add('translate-x-8'); // Geser bulatan ke kanan
+                circle.textContent = '🌙'; // Ubah ikon ke matahari
+            } // kalau misal nya bukan dark brti kan white, dia geser lagi ke kiri, di remove translate x 8 nya jd balik ke kiri lagi, trs bulannya diubah jd matahari
+            else {
+                circle.classList.remove('translate-x-8'); // Geser bulatan kembali ke kiri
+                circle.textContent = '☀️'; // Ubah ikon ke bulan
+            }
+        });
+    </script>
+</body>
+</html>

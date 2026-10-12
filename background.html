@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar background html</title>
+    <link rel="stylesheet" href="src/output.css">
+</head>
+<body class="bg-amber-100 text-taupe-900 p-8">
+    <div class="max-w-4xl mx-auto space-y-12">
+        <!-- header materi -->
+         <header class="text-center">
+            <h1 class="text-4xl font-extrabold text-cyan-600 mb-2">
+                materi backround tailwind
+            </h1>
+            <p class="text-lg text-slate-900 ">
+                belajar backround dan visual effect utility
+            </p>
+         </header>
+
+
+         <!-- bagian 1 : backround utilities -->
+          <section class="bg-white p-6 rounded-xl shadow-md border border-slate-200">
+
+            <h2 class="text-2xl font-bold text-slate-900 border-b-2 border-cyan-500 pb-2 mb-6">
+                1.background utilities (color, image, gradient)
+            </h2>
+
+            <!-- background color dan gradient -->
+             <div class="mb-6">
+                <h3 class="text-sm font-semibold text-slate-600 uppercase tracking-wider mb-3">a. warna dasar & gradient</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 text-white text-center font-bold">
+                    <div class="bg-slate-900 p-4 rounded-lg">kotak bg biasa</div>
+                    <div class="bg-gradient-to-r from-cyan-500 to-blue-500 p-4 rounded-lg">kotak bg gradient kiri ke kanan</div>
+                    <div class="bg-gradient-to-b from-emerald-400 to-teal-700 p-4 rounded-lg">kotak bg atas ke bawah</div>
+
+                </div>
+             </div>
+
+             <!-- background image -->
+              <div>
+                <h3 class="text-sm font-semibold text-slate-600 uppercase tracking-wider mb-3">
+                    b. background gambar
+                </h3>
+                <div class="h-48 rounded-lg bg-[url('https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=800&q=80')] bg-cover bg-center flex items-center justify-center text-white font-bold text-2xl hover:translate-y-1 mb-6">
+                    bg cover dan bg center
+                </div>
+              </div>
+
+              <!-- focus -->
+               <input type="text" placeholder="klik disini" class="w-full border border-slate-300 p-3 rounded-lg outline-none focus:ring-2 focus:ring-pink-500">
+
+          </section>
+
+    </div>
+    
+</body>
+</html>
